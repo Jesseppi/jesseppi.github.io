@@ -25,9 +25,9 @@ I am a Web Developer with a good knowledge of core OO principles. I have extensi
 ## Employment
 ***
 ### Senior Developer - New Technologies Team
-***
-#### TechnologyOne, QLD
-##### Jan 2018 - Present
+
+**TechnologyOne, QLD  
+Jan 2018 - Present**
 
 ```
 Being a part of the New Technologies team has allowed me to define myself as a leader. I lead a team of 4 developers, with oversight from a director. I have overseen a project from inception to a working product and have been crucial in its success. The project has utilised the ReactJs library using JavaScript, TypeScript and CSS to create an multi SPA product running both as a web app and a native app using ReactNative. The project has progressed through both research and development phases utilising the Agile Methodology, which allowed the team to remain focussed and driven. I ran all stand ups and coordinated sprint planning as well the workload of junior developers.
@@ -48,10 +48,11 @@ The project has required that I upskill in a lot of areas. I have had to manage 
 ```
 
 ***
+
 ### Junior >> Senior Developer - Platform Team
-***
-#### TechnologyOne, QLD
-##### Jan 2016 - Jan 2018
+
+**TechnologyOne, QLD  
+Jan 2016 - Jan 2018**
 
 ```
 I worked within the core platform team, delivering feature libraries for internal teams to utilise.
@@ -60,17 +61,21 @@ My role required me to redesign how user access was implemented across the enter
 
 My development stack included SQL,PostgreSQL,C#, JavaScript, HTML5, and CSS. In the platform team I mainly worked on server side code which is then used by proprietary patterns to render the client side using the MVC framework. My work has been a combination of working within these patterns to create new functional screens within the product and creating new code to be used by the patterns in their operation.
 ```
+
 #### Achievements
+
 ```
 • Extensive involvement in the redesign of user access across the whole of the enterprise suite
 • Development of a deployment tool used for internal testing and support cases that removes all need for technical
 knowledge to get an suite environment up and running
 ```
+
 ***
+
 ### Junior Developer
-***
-#### Lifeware, QLD
-##### July 2015 - Jan 2016
+
+**Lifeware, QLD  
+July 2015 - Jan 2016**
 
 ```
 Being a Junior developer at Lifeware allowed me to get involved with the full web stack across multiple frameworks.
@@ -78,16 +83,18 @@ I tackled ground up web builds, Wordpress sites, Shopify sites and many in betwe
 ```
 
 ***
+
 ### Business Manager
-***
-#### Gear Shop Brisbane, QLD
-##### August 2012 - July 2015
+
+**Gear Shop Brisbane, QLD  
+August 2012 - July 2015**
 
 ```
 This role allowed me to combine my passion for cycling whilst developing and honing many of my business skills. To successfully manage the business on behalf of the owner, I had to utilise my skills including financial and staff management, stock control, customer liaison and most importantly, time management. I combined this role with studying full time to complete my Information Technology degree which has required me to make sure that tasks are strictly prioritised and executed to ensure the business’ continual success.
 ```
 
 #### Achievements
+
 ```
 • Improving daily cash holdings to ensure the business operates at a sustainable level,
 • Implementing a timely management financial reporting process,
@@ -98,29 +105,33 @@ currencies so that the correct sales margins can be applied
 ```
 
 ***
+
 ### Genius (Service Technician)
-***
-####  Apple, Brisbane, QLD
-##### Feb 2012 - August 2012
+
+**Apple, Brisbane, QLD  
+Feb 2012 - August 2012**
 
 ```
 As a Genius with Apple, my role was one with a large workflow scope. It required highly refined personal communication skills, and an advanced technical knowledge of all Apple’s hardware and software systems. There was a high focus on quality customer service, which required me to engage the customer but also solve problems quickly and effectively. I was required to have detailed knowledge on all Apple’s portable devices, desktops and software packages which was put into practise both dealing with customers and when performing repairs. The role was fast paced with a strict adherence to personal time management when juggling the many customer interactions throughout the day.
 ```
+
 ***
+
 ### Group Designer
-***
-#### The Fox Hotel Group, Brisbane, QLD
-##### Dec 2010 - Aug 2011
+
+**The Fox Hotel Group, Brisbane, QLD  
+Dec 2010 - Aug 2011**
 
 ```
 As the Designer for The Fox Hotel Group, I was solely responsible for the design and branding of the four venues under the group. The position exposed me to many different facets of design, including web design, web maintenance, print design, billboard design and logo development. There was no supervision from a senior designer which necessitated that I learn on the job through self learning, and problem solving. It also meant that I became confident liaising with external parties including printers, suppliers, and function coordinators. I found the position rewarding as it pushed me as a designer and required me to think outside just one facet of design.
 ```
 
 ***
+
 ### Junior Designer / Financial Manager
-***
-#### Grand Scheme Clothing, Brisbane, QLD
-##### Jan 2010 - Dec 2010
+
+**Grand Scheme Clothing, Brisbane, QLD  
+Jan 2010 - Dec 2010**
 
 ```
 Whilst initially being taken on as an intern at Grand Scheme, I stepped into the duties of a part time designer and financial manager. I had to manage multiple responsibilities all with short deadlines and with limited guidance. I was required to work independently on projects within both roles with a high attention paid to detail as my work could not always be reviewed.
@@ -128,29 +139,34 @@ My key achievement was setting up an accounting system with limited resources th
 ```
 
 ***
+
 ### Graduate Accountant - Audit / Recovery & Reorganisation
-***
-#### Grant Thornton, Brisbane, QLD
-##### Feb 2009 - Aug 2009
+
+**Grant Thornton, Brisbane, QLD  
+Feb 2009 - Aug 2009**
 
 ```
 On graduating from Queensland University of Technology, I actively pursued a career as an accounting graduate with the global accounting group Grant Thornton. In my role as a graduate accountant, I worked within the Audit and Insolvency departments.
 Working within both these departments enabled me to interact directly with clients on a daily basis, gain a thorough understanding of business procedures and refine my skills in communication and time management. Whilst working in the Insolvency department I was a principal contact with a major client and entrusted with substantial responsibilities in this role.
 ```
 
+***
+
 ## Education
 
 2013 - 2015
 Queensland University of Technology, Brisbane, QLD  
-**BACHELOR OF INFORMATION TECHNOLOGY WITH DISTINCTION GPA: 6.5** 
+**Bachelor of Information Technology with Distinction - GPA: 6.5**
 
 2009
 Shillington College, Brisbane, QLD  
-**CERTIFICATE IV IN DESIGN**  
+**Certificate IV in Design**
 
 2005 - 2008
 Queensland University of Technology, Brisbane, QLD  
-**BACHELOR OF BUSINESS (ACCOUNTING / PROFESSIONAL ACCOUNTING) GPA: 5.25**  
+**Bachelor of Business (Accounting / Professional Accounting) - GPA: 5.25**
+
+***
 
 ## References   
 Available on request
