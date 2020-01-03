@@ -30,13 +30,33 @@ I am a Web Developer with a good knowledge of core OO principles. I have extensi
 Jan 2018 - Present**
 
 ```
-Being a part of the New Technologies team has allowed me to define myself as a leader. I lead a team of 4 developers, with oversight from a director. I have overseen a project from inception to a working product and have been crucial in its success. The project has utilised the ReactJs library using JavaScript, TypeScript and CSS to create an multi SPA product running both as a web app and a native app using ReactNative. The project has progressed through both research and development phases utilising the Agile Methodology, which allowed the team to remain focussed and driven. I ran all stand ups and coordinated sprint planning as well the workload of junior developers.
+Being a part of the New Technologies team has allowed me to define myself as a leader.
+I lead a team of 4 developers, with oversight from a director. I have overseen a project
+from inception to a working product and have been crucial in its success. The project has
+utilised the ReactJs library using JavaScript, TypeScript and CSS to create an multi SPA
+product running both as a web app and a native app using ReactNative. The project has
+progressed through both research and development phases utilising the Agile Methodology,
+which allowed the team to remain focussed and driven. I ran all stand ups and coordinated
+sprint planning as well the workload of junior developers.
 
-The project involved creating an extensive component library of node packages which have since been used by multiple other internal teams. I created the first SPA app within the product, which acted as the main portal for accessing other apps. My app consumed many of the node components through npm as well as some app specific components. I also developed the back end infrastructure to supply the client with a RESTful API.
+The project involved creating an extensive component library of node packages which have
+since been used by multiple other internal teams. I created the first SPA app within the
+product, which acted as the main portal for accessing other apps. My app consumed many of
+the node components through npm as well as some app specific components. I also developed
+the back end infrastructure to supply the client with a RESTful API.
 
-I jointly defined the deployment model for the apps client side code. I developed the deployment infrastructure within TeamCity and AWS where code can progress from being checked in, to live in production within 2-5 minutes. The deployment stack uses many AWS resources including CloudFront, ApiGateway and S3. My aim was to remove as much manual handling within the deployment pipeline as possible. Apart from code check in, the pipeline has no need for human input to deliver code to the client machine.
+I jointly defined the deployment model for the apps client side code. I developed the
+deployment infrastructure within TeamCity and AWS where code can progress from being
+checked in, to live in production within 2-5 minutes. The deployment stack uses many
+AWS resources including CloudFront, ApiGateway and S3. My aim was to remove as much manual
+handling within the deployment pipeline as possible. Apart from code check in, the
+pipeline has no need for human input to deliver code to the client machine.
 
-The project has required that I upskill in a lot of areas. I have had to manage people, liaise with many internal teams, provide assistance and training as well as deliver code of my own. I have stepped well outside my comfort zone because I saw a challenge that would provide me with a wealth of experience and great learning curve. I have really enjoyed pushing myself and was reminded why I am so passionate about software development. 
+The project has required that I upskill in a lot of areas. I have had to manage people,
+liaise with many internal teams, provide assistance and training as well as deliver code
+of my own. I have stepped well outside my comfort zone because I saw a challenge that would
+provide me with a wealth of experience and great learning curve. I have really enjoyed
+pushing myself and was reminded why I am so passionate about software development.
 ```
 
 #### Achievements
