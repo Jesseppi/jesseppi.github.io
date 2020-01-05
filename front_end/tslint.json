@@ -1,0 +1,43 @@
+{
+    "extends": ["tslint:latest"],
+    "jsRules": {},
+    "rules": {
+        "arrow-parens": [true, "ban-single-arg-parens"],
+        "no-reference": true,
+        "indent": [true, "spaces", 4],
+        "no-require-imports": true,
+        "member-access": [false],
+        "object-literal-shorthand": [false],
+        "object-literal-sort-keys": [
+            false,
+            "ignore-case",
+            "match-declaration-order"
+        ],
+        "trailing-comma": [false],
+        "interface-name": [false],
+        "new-parens": [true],
+        "one-variable-per-declaration": [true],
+        "no-console": [false],
+        "comment-format": [false],
+        "prefer-object-spread": [true],
+        "triple-equals": [true],
+        "prefer-const": [false],
+        "only-arrow-functions": [false],
+        "ordered-imports": [false],
+        "variable-name": [true, "ban-keywords", "allow-leading-underscore"],
+        "curly": [true, "ignore-same-line"],
+        "max-line-length": [false],
+        "prefer-conditional-expression": [false],
+        "no-submodule-imports": [
+            true,
+            "rxjs",
+            "redux-persist/integration/react",
+            "redux-persist/lib/storage",
+            "react-day-picker",
+            "lodash"
+        ],
+        "no-empty-interface": false,
+        "ban-comma-operator": false
+    },
+    "rulesDirectory": []
+}
