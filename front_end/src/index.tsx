@@ -1,11 +1,15 @@
 import * as React from "react";
+
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Loadable from "react-loadable";
+import * as Loadable from "react-loadable";
 
 const LoadableHomePage = Loadable({
     loader: () => import("./pages/home"),
-    loading: "Loading"
+    loading() {
+        return (<div>Loading...</div>);
+    }
+
 });
 
 class Application extends React.Component {

@@ -21,81 +21,39 @@ var config =
         extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".less", ".woff"]
     },
     module: {
-        /*
-        * Each loader needs an associated Regex test that goes through each
-        * of the files you've included (or in this case, all files but the
-        * ones in the excluded directories) and finds all files that pass
-        * the test. Then it will apply the loader to that file. I haven't
-        */
-
         rules: [
             {
-                test: /\.jsx?$/,
-                // use: babelLoaderConfig,
-                exclude: function (modulePath) {
-                    var exclude = modulePath.indexOf(path.sep + 'node_modules' + path.sep) > -1 && modulePath.indexOf(path.sep + 'node_modules' + path.sep + '@technologyone' + path.sep) === -1 && modulePath.indexOf(path.sep + 'react-loadable' + path.sep) === -1;
-                    return exclude;
-                }
-            },
-            {
-                test: /\.jsx?$/,
-                exclude: function (modulePath) {
-                    var exclude = modulePath.indexOf(path.sep + 'node_modules' + path.sep + '@technologyone' + path.sep) === -1;
-                    return exclude;
-                }
-            },
-            {
-                enforce: "pre",
-                test: /\.tsx?$/,
-                loader: "tslint-loader",
+                test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                options: {
-                    failOnHint: true,
-                    configuration: require("./tslint.json")
-                }
+                use: {
+                    loader: 'ts-loader',
+                },
             },
             {
-                test: /\.tsx?$/,
-                use: [
-                    babelLoaderConfig,
-                    replaceAssetsPathLoaderControl,
-                    {
-                        loader: "ts-loader"
-                    }
-                ]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    cssLoaderConfig
-                ]
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.less$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    replaceAssetsPathLoaderControl,
-                    cssLoaderConfig,
-                    postCssLoaderConfig,
-                    {
-                        loader: "less-loader",
-                        options: {
-                            sourceMap: !prod,
-                        }
-                    }
-                ]
+                loader: 'less-loader', // compiles Less to CSS
             },
             {
                 test: /\.html$/,
-                use: [
-                    replaceAssetsPathLoaderControl,
-                    {
-                        loader: "html-loader"
-                    }
-                ]
+                loader: "html-loader"
             }
         ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin(),
+        new CleanWebpackPlugin()
+    ],
+    // When importing a module whose path matches one of the following, just
+    // assume a corresponding global variable exists and use that instead.
+    // This is important because it allows us to avoid bundling all of our
+    // dependencies, which allows browsers to cache those libraries between builds.
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM"
     },
     devServer: {
         stats: { children: false },
@@ -112,3 +70,5 @@ var config =
         https: true
     }
 }
+
+module.exports = config;
