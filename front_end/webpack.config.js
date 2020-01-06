@@ -44,7 +44,7 @@ var config =
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({template: "./public/index.html", filename: "index.html"}),
         new CleanWebpackPlugin()
     ],
     // When importing a module whose path matches one of the following, just
@@ -52,8 +52,8 @@ var config =
     // This is important because it allows us to avoid bundling all of our
     // dependencies, which allows browsers to cache those libraries between builds.
     externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
+        // "react": "React",
+        //"react-dom": "ReactDOM"
     },
     devServer: {
         stats: { children: false },
