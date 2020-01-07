@@ -1,6 +1,6 @@
 @standardResumeMargin: 10px;
 
-#resumeContainer{
+#resumeContainer {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -10,13 +10,42 @@
     font-weight: 100;
 }
 
-.mainContainer{
+.flex {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mainContainer {
     display: block;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.resumeDetailBlock{
+.rightContent {
+    display: block;
+    max-width: 900px;
+    align-self: flex-end;
+}
+
+.leftContent {
+    display: block;
+    width: 200px;
+    align-self: flex-start;
+}
+
+.resumeSectionBlock {
+    margin: 0;
+
+    h3,
+    h4,
+    h5 {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+    }
+}
+
+.resumeDetailBlock {
     margin: @standardResumeMargin 0px @standardResumeMargin 0px;
 }
 
@@ -26,7 +55,7 @@
     font-weight: 100;
 }
 
-.resumeJobBlock h4{
-    font-family: 'Raleway',sans-serif;
+.resumeJobBlock h4 {
+    font-family: 'Raleway', sans-serif;
     margin: 0px;
 }
