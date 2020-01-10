@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomePage from "./pages/home";
+import HomePage from "./pages/resume";
 
 class Application extends React.Component {
     render() {

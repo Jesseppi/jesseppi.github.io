@@ -1,5 +1,6 @@
 import * as React from "react";
-
+import ResumeBlock, { ResumeBlockType } from "./components/resumeDetailBlock";
+import Heading, { HeadingLevel } from "./components/heading";
 import "./index.less";
 
 class HomePage extends React.Component {
@@ -9,28 +10,26 @@ class HomePage extends React.Component {
                 <div id="resumeTitle" className="rightContent">
                     <h1>Curruculum Vitae</h1>
                 </div>
-                <div className="resumeDetailBlock resumePersonalDetails rightContent">
-                    <h3>{"Jesse Cunningham-Creech".toUpperCase()}</h3>
-                    <h3>{"M  0400 012 803".toUpperCase()}</h3>
-                    <h3>{"E  jesse.creech@gmail.com".toUpperCase()}</h3>
-                    <h3>{"Li  www.linkedin.com/in/jesse-creech".toUpperCase()}</h3>
-                </div>
-                <div className="resumeDetailBlock resumeCopyBlock rightContent">
-                    <div>
-                        <p>I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.</p>
-                    </div>
-                </div>
-                <div className="resumeSectionBlock leftContent">
-                    <h3>{"Employment".toUpperCase()}</h3>
-                </div>
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeDetailBlock","resumePersonalDetails"]}>
+                    <Heading level={HeadingLevel.h3} copy="Jesse Cunningham-Creech" uppercase={true} />
+                    <Heading level={HeadingLevel.h3} copy="M  0400 012 803" uppercase={true} />
+                    <Heading level={HeadingLevel.h3} copy="E  jesse.creech@gmail.com" uppercase={true} />
+                    <Heading level={HeadingLevel.h3} copy="Li  www.linkedin.com/in/jesse-creech" uppercase={true} />
+                </ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeCopyBlock"]}>
+                    <p>I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.</p>
+                </ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.section}>
+                    <Heading level={HeadingLevel.h3} copy="Employment" uppercase={true} />
+                </ResumeBlock>
 
-                <div className="resumeSectionBlock leftContent">
-                    <h5>{"Jan 2018 - Present".toUpperCase()}</h5>
-                </div>
+                <ResumeBlock blockType={ResumeBlockType.section}>
+                    <Heading level={HeadingLevel.h5} copy="Jan 2018 - Present" uppercase={true} />
+                </ResumeBlock>
 
-                <div className="resumeDetailBlock resumeJobBlock rightContent">
-                    <h4>{"TechnologyOne, QLD".toUpperCase()}</h4>
-                    <h4>{"Senior Developer - New Technologies Team".toUpperCase()}</h4>
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
+                    <Heading level={HeadingLevel.h4} copy="TechnologyOne, QLD" uppercase={true} />
+                    <Heading level={HeadingLevel.h4} copy="Senior Developer - New Technologies Team" uppercase={true} />
                     <p> Being a part of the New Technologies team has allowed me to define myself as a leader.
                     I lead a team of 4 developers, with oversight from a director. I have overseen a project
                     from inception to a working product and have been crucial in its success. The project has
@@ -60,14 +59,14 @@ class HomePage extends React.Component {
                     pushing myself and  was reminded why I am so passionate about software development.</p>
 
                     <div>
-                        <h4>{"Achievements".toUpperCase()}</h4>
+                        <Heading level={HeadingLevel.h4} copy="Achievements" uppercase={true} />
                         <ul>
                             <li>Delivering a new product with a new tech stack</li>
                             <li>Leading a high performing team</li>
                             <li>Developing an automated release pipeline</li>
                         </ul>
                     </div>
-                </div>
+                </ResumeBlock>
 
                 <div className="resumeSectionBlock leftContent">
                     <h5>{"Jan 2016 - Jan 2018".toUpperCase()}</h5>
