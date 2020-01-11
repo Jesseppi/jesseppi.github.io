@@ -11,7 +11,7 @@ enum HeadingLevel {
 interface HeadingProps {
     level: HeadingLevel;
     uppercase: boolean;
-    copy: string;
+    value: string;
 }
 
 class Heading extends React.Component<HeadingProps> {
@@ -29,32 +29,32 @@ class Heading extends React.Component<HeadingProps> {
         switch (props.level) {
             case HeadingLevel.h1:
                 return(
-                    <h1>{props.uppercase ? props.copy.toUpperCase() : props.copy }</h1>
+                    <h1>{props.uppercase ? props.value.toUpperCase() : props.value }</h1>
                 );
                 break;
             case HeadingLevel.h2:
                 return (
-                    <h2>{props.uppercase ? props.copy.toUpperCase() : props.copy}</h2>
+                    <h2>{props.uppercase ? props.value.toUpperCase() : props.value}</h2>
                 );
                 break;
             case HeadingLevel.h3:
                 return (
-                    <h3>{props.uppercase ? props.copy.toUpperCase() : props.copy}</h3>
+                    <h3>{props.uppercase ? props.value.toUpperCase() : props.value}</h3>
                 );
                 break;
             case HeadingLevel.h4:
                 return (
-                    <h4>{props.uppercase ? props.copy.toUpperCase() : props.copy}</h4>
+                    <h4>{props.uppercase ? props.value.toUpperCase() : props.value}</h4>
                 );
                 break;
             case HeadingLevel.h5:
                 return (
-                    <h5>{props.uppercase ? props.copy.toUpperCase() : props.copy}</h5>
+                    <h5>{props.uppercase ? props.value.toUpperCase() : props.value}</h5>
                 );
                 break;
             default:
                 return (
-                    <h1>{props.copy}</h1>
+                    <h1>{props.value}</h1>
                 );
                 break;
         }
