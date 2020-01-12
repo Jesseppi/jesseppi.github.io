@@ -1,15 +1,54 @@
 @import (reference) "../../constants/globals.less";
 
+@desktop: ~"only screen and (min-width: 960px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@phone: ~"only screen and (min-width: 200px) and (max-width: 480px)";
+
+
 #resumeContainer {
     font-family: 'Roboto', sans-serif;
 }
 
-#resumeTitle {
+.oneHundredPercentViewWidth {
+    width: 100vw;
+}
+
+#resumeTitle h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-weight: 100 !important;
+    margin: 0;
+
+    @media @desktop {
+        font-size: 4em !important;
+    }
+}
+
+.resumePersonalDetails h3 {
+    margin: 1px;
+    font-size: 18px;
     font-weight: 100;
-    // temporary fix for text wrapping, media queries will be used
-    overflow-wrap: anywhere;
+}
+
+.resumePersonalDetails h3.marginLeft20px {
+    .marginLeftpx(20px)
+}
+
+.resumePersonalDetails h3.marginLeft32px {
+    .marginLeftpx(32px)
+}
+
+
+.resumePersonalDetails h3.nameTitle {
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+}
+
+.sectionTitle {
+    margin: 10px 0 10px 0;
+    text-decoration: underline;
 }
 
 .flex {
@@ -27,7 +66,14 @@
 .rightContent {
     display: block;
     max-width: 900px;
-    align-self: flex-end;
+
+    @media @desktop {
+        align-self: flex-end;
+    }
+
+    @media @phone {
+        align-self: auto;
+    }
 }
 
 .leftContent {
@@ -37,12 +83,10 @@
 }
 
 .resumeSectionBlock {
-    margin: 0;
 
     h3,
     h4,
     h5 {
-        font-family: 'Raleway', sans-serif;
         margin: 0;
     }
 }
@@ -51,13 +95,17 @@
     margin: @standardResumeMargin 0px @standardResumeMargin 0px;
 }
 
-.resumePersonalDetails h3 {
-    margin: 1px;
-    font-size: 18px;
-    font-weight: 100;
+.resumeJobBlock {
+
+    h4 {
+        margin: 0px;
+    }
+
+    h4:nth-child(1).ralewayTitle     {
+        font-family: 'Raleway', sans-serif;
+    }
 }
 
-.resumeJobBlock h4 {
-    font-family: 'Raleway', sans-serif;
-    margin: 0px;
+.jobDescription {
+    font-weight: 800;
 }
