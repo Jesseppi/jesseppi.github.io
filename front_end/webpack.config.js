@@ -8,7 +8,7 @@ const webpack = require("webpack");
 const dirname = path.resolve(__dirname, '.');
 
 const prod = process.argv.indexOf("--mode=production") !== -1;
-const buildPath = path.resolve(dirname, "dist");
+const buildPath = prod ? path.resolve(dirname, "../") : path.resolve(dirname, "dist");
 const inDevMode = process.argv.find(v => v.includes('webpack-dev-server')) ? true : false;
 
 var config =
@@ -45,7 +45,6 @@ var config =
     },
     plugins: [
         new HtmlWebpackPlugin({template: "./public/index.html", filename: "index.html"}),
-        new CleanWebpackPlugin()
     ],
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
@@ -69,6 +68,10 @@ var config =
         },
         https: true
     }
+}
+
+if(!prod){
+    config.plugins.add(new CleanWebpackPlugin());
 }
 
 module.exports = config;
