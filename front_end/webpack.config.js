@@ -71,7 +71,7 @@ var config =
 }
 
 if(!prod){
-    config.plugins.add(new CleanWebpackPlugin());
+    config.plugins.push(new CleanWebpackPlugin());
 }
 
 module.exports = config;
