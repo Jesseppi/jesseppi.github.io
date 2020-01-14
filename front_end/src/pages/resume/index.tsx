@@ -4,7 +4,47 @@ import Heading, { HeadingLevel } from "./components/heading";
 import List, { ListType } from "./components/list";
 import "./index.less";
 
-class HomePage extends React.Component {
+interface JobOrganisation {
+    name: string;
+    location: string;
+}
+
+interface Job {
+    period?: string;
+    organisation?: JobOrganisation;
+    position: string;
+    description?: string[];
+    achievements?: string[];
+}
+
+function getJobsMock(): Job[] {
+    let jobsArray: Job[] = [
+        {
+            period: "Jan 2018 - Present",
+            organisation: {
+                location: "QLD",
+                name: "TechnologyOne"
+            },
+            position: "Senior Developer - New Technologies Team",
+            description: [
+                "Being a part of the New Technologies team has allowed me to define myself as a leader. I lead a team of 4 developers, with oversight from a director.I have overseen a project from inception to a working product and have been crucial in its success.The project has utilised the ReactJs library using JavaScript, TypeScript and CSS to create an multi SPA product running both as a web app and a native app using ReactNative.The project has progressed through both research and development phases utilising the Agile Methodology, which allowed the team to remain focussed and driven.I ran all stand ups and coordinated sprint planning as well the workload of junior developers.",
+                "The project involved creating an extensive component library of node packages which have since been used by multiple other internal teams.I created the first SPA app within the product, which acted as the main portal for accessing other apps.My app consumed many of the node components through npm as well as some app specific components.I also developed the back end infrastructure to supply the client with a RESTful API.",
+                "I jointly defined the deployment model for the apps client side code. I developed the deployment infrastructure within TeamCity and AWS where code can progress from being checked in, to live in production within 2-5 minutes. The deployment stack uses many AWS resources including CloudFront, ApiGateway and S3. My aim was to remove as much manual handling within the deployment pipeline as possible. Apart from code check in, the pipeline has no need for human input to deliver code to the client machine.",
+                "The project has required that I upskill in a lot of areas. I have had to manage people, liaise with many internal teams, provide assistance and training as well as deliver code of my own. I have stepped well outside my comfort zone because I saw a challenge that would provide me with a wealth of experience and great learning curve. I have really enjoyed pushing myself and  was reminded why I am so passionate about software development."
+            ],
+            achievements: [
+                "Delivering a new product with a new tech stack",
+                "Leading a high performing team",
+                "Developing an automated release pipeline"
+            ]
+        },
+    ];
+
+
+    return jobsArray;
+}
+
+class ResumePage extends React.Component {
     render() {
         return (
             <div id="resumeContainer" className="mainContainer flex">
@@ -37,7 +77,7 @@ class HomePage extends React.Component {
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
                     <Heading level={HeadingLevel.h4} value="TechnologyOne, QLD" uppercase={false} classes={["ralewayTitle"]} />
-                    <Heading level={HeadingLevel.h4} value="Senior Developer - New Technologies Team" uppercase={true} classes={["jobDescription"]}/>
+                    <Heading level={HeadingLevel.h4} value="Senior Developer - New Technologies Team" uppercase={true} classes={["jobDescription"]} />
                     <p> Being a part of the New Technologies team has allowed me to define myself as a leader.
                     I lead a team of 4 developers, with oversight from a director. I have overseen a project
                     from inception to a working product and have been crucial in its success. The project has
@@ -82,7 +122,7 @@ class HomePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
-                    <Heading level={HeadingLevel.h4} value="TechnologyOne, QLD" uppercase={false} classes={["ralewayTitle"]}/>
+                    <Heading level={HeadingLevel.h4} value="TechnologyOne, QLD" uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value="Junior >> Senior Developer - Platform Team" uppercase={true} />
                     <p> I worked within the core platform team, delivering feature
                             libraries for internal teams to utilise.</p>
@@ -131,7 +171,7 @@ class HomePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
-                    <Heading level={HeadingLevel.h4} value="Gear Shop Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]}/>
+                    <Heading level={HeadingLevel.h4} value="Gear Shop Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value="Business Manager" uppercase={true} />
                     <p> This role allowed me to combine my passion for cycling whilst developing and honing many
                     of my business skills. To successfully manage the business on behalf of the owner, I had
@@ -157,7 +197,7 @@ class HomePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
-                    <Heading level={HeadingLevel.h4} value="Apple, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]}/>
+                    <Heading level={HeadingLevel.h4} value="Apple, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value="Genius (Service Technician)" uppercase={true} />
                     <p> As a Genius with Apple, my role was one with a large workflow scope. It required highly
                     refined personal communication skills, and an advanced technical knowledge of all Apple’s
@@ -175,7 +215,7 @@ class HomePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
-                    <Heading level={HeadingLevel.h4} value="The Fox Hotel Group, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]}/>
+                    <Heading level={HeadingLevel.h4} value="The Fox Hotel Group, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value="Group Designer" uppercase={true} />
                     <p> As a Genius with Apple, my role was one with a large workflow scope. It required highly
                     refined personal communication skills, and an advanced technical knowledge of all Apple’s
@@ -206,7 +246,7 @@ class HomePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
-                    <Heading level={HeadingLevel.h4} value="Shillington College, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]}/>
+                    <Heading level={HeadingLevel.h4} value="Shillington College, Brisbane, QLD" uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value="Certificate IV in Design" uppercase={true} />
                 </ResumeBlock>
 
@@ -222,4 +262,4 @@ class HomePage extends React.Component {
     }
 }
 
-export default HomePage;
+export default ResumePage;
