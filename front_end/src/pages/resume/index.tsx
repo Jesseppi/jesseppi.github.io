@@ -107,14 +107,12 @@ class ResumePage extends React.Component {
 
     renderJobBlocks() {
         let jobsArray = getJobsMock();
-        let elementsArray: JSX.Element[] = [];
-        jobsArray.forEach(job => {
-            elementsArray.push(
-                <ResumeBlock blockType={ResumeBlockType.section}>
+        return (jobsArray.map(job => (
+            <div className="flex" key={`${job.period}${job.position}`}>
+                <ResumeBlock blockType={ResumeBlockType.section} key={job.period}>
                     <Heading level={HeadingLevel.h5} value={job.period} uppercase={false} />
-                </ResumeBlock>);
-            elementsArray.push(
-                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]}>
+                </ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]} key={job.position}>
                     <Heading level={HeadingLevel.h4} value={`${job.organisation.name}, ${job.organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value={job.position} uppercase={true} classes={["jobDescription"]} />
                     {job?.description.map(paragraph => (
@@ -126,9 +124,9 @@ class ResumePage extends React.Component {
                             <List listType={ListType.unordered} listItems={job.achievements} />
                         </div>
                     }
-                </ResumeBlock>);
-        });
-        return (elementsArray);
+                </ResumeBlock>
+            </div>
+        )));
     }
 
     render() {
