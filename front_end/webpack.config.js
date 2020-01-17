@@ -60,7 +60,7 @@ var config =
         compress: true,
         historyApiFallback: true,
         port: 8080,
-        open: true,
+        open: false,
         watchContentBase: true,
         watchOptions: {
             poll: true,
