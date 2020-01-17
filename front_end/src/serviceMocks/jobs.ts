@@ -1,4 +1,4 @@
-import {Job} from "../pages/resume";
+import { Job } from "../pages/resume";
 
 function getJobsMock(): Job[] {
     let jobsArray: Job[] = [
@@ -19,7 +19,11 @@ function getJobsMock(): Job[] {
                 "Delivering a new product with a new tech stack",
                 "Leading a high performing team",
                 "Developing an automated release pipeline"
-            ]
+            ],
+            image: {
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnDcUZVpEdBw/company-logo_100_100/0?e=1587600000&v=beta&t=fryyaQmyjCmdDdxWhfG3PsNP4HQraDUIqESatkxAxUY",
+                imageAlt: "TechnologyOne"
+            }
         },
         {
             period: "Jan 2016 - Jan 2018",
@@ -86,4 +90,4 @@ function getJobsMock(): Job[] {
     return jobsArray;
 }
 
-export {getJobsMock};
+export { getJobsMock };

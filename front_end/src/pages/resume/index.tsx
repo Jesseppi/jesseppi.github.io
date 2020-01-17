@@ -12,12 +12,18 @@ interface JobOrganisation {
     location: string;
 }
 
+interface ImageDetail {
+    imageUrl: string;
+    imageAlt: string;
+}
+
 interface Job {
     period: string;
     organisation: JobOrganisation;
     position: string;
     description: string[];
     achievements?: string[];
+    image?: ImageDetail;
 }
 
 interface EducationInstitution {
@@ -32,26 +38,49 @@ interface EducationItem {
     period: string;
 }
 
+function renderJobAndImage(image: ImageDetail, children: (classes: string[]) => JSX.Element) {
+    let classes: string[] = [];
+    if (image) {
+        classes.push("inline");
+        return (
+            <div className="flex">
+                <ResumeBlock blockType={ResumeBlockType.section} classes={classes}><img alt={image.imageAlt} src={image.imageUrl} /></ResumeBlock>
+                {children(classes)}
+            </div>);
+    } else {
+        return (children(classes));
+    }
+
+}
+
+function renderJobBlock(organisation: JobOrganisation, position: string, description: string[], achievements: string[], classes: string[]) {
+    classes.push("resumeJobBlock");
+    return (
+        <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={classes} key={position}>
+            <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
+            <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
+            {description && description?.map(paragraph => (
+                <p>{paragraph}</p>
+            ))}
+            {achievements &&
+                <div>
+                    <Heading level={HeadingLevel.h4} value="Achievements" uppercase={true} />
+                    <List listType={ListType.unordered} listItems={achievements} />
+                </div>
+            }
+        </ResumeBlock>
+    );
+}
+
 function renderJobBlocks() {
     let jobsArray = getJobsMock();
-    return (jobsArray.map(({ period, organisation, position, description, achievements }) => (
+    return (jobsArray.map(({ period, organisation, position, description, achievements, image }) => (
         <div className="flex" key={`${period}${position}`}>
             <ResumeBlock blockType={ResumeBlockType.section}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
-            <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]} key={position}>
-                <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
-                <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
-                {description && description?.map(paragraph => (
-                    <p>{paragraph}</p>
-                ))}
-                {achievements &&
-                    <div>
-                        <Heading level={HeadingLevel.h4} value="Achievements" uppercase={true} />
-                        <List listType={ListType.unordered} listItems={achievements} />
-                    </div>
-                }
-            </ResumeBlock>
+            {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
+
         </div>
     )));
 }
