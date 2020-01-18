@@ -21,8 +21,8 @@ class List extends React.Component<ListProps> {
 
     renderItems() {
         return (
-            this.props.listItems.map((item: any) => {
-                return (<li>{item}</li>);
+            this.props.listItems.map((item, index) => {
+                return (<li key={index}>{item}</li>);
             })
         );
     }
