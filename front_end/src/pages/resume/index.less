@@ -51,10 +51,19 @@
     text-decoration: underline;
 }
 
-.flex {
+.flexColumn {
     display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.flexRowSpaceBetween {
+
+    @media @desktop {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .mainContainer {
@@ -110,11 +119,19 @@
     font-weight: 800;
 }
 
-.resumeJobImage{
-    max-width: 100px;
-    margin: 0 auto 0 auto;
+.resumeJobImage {
+    margin: 10px auto 10px auto;
+
+    img {
+        max-width: 75px;
+        border-radius: 2px;
+    }
+
+    svg {
+        max-width: 75px;
+    }
 }
 
-.inline{
+.inline {
     display: inline-block;
 }
