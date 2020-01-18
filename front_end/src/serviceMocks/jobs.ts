@@ -1,4 +1,4 @@
-import {Job} from "../pages/resume";
+import { Job } from "../pages/resume";
 
 function getJobsMock(): Job[] {
     let jobsArray: Job[] = [
@@ -19,7 +19,11 @@ function getJobsMock(): Job[] {
                 "Delivering a new product with a new tech stack",
                 "Leading a high performing team",
                 "Developing an automated release pipeline"
-            ]
+            ],
+            image: {
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnDcUZVpEdBw/company-logo_100_100/0?e=1587600000&v=beta&t=fryyaQmyjCmdDdxWhfG3PsNP4HQraDUIqESatkxAxUY",
+                imageAlt: "TechnologyOne logo"
+            }
         },
         {
             period: "Jan 2016 - Jan 2018",
@@ -36,7 +40,11 @@ function getJobsMock(): Job[] {
             achievements: [
                 "Extensive involvement in the redesign of user access across the whole of the enterprise suite",
                 "Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get an suite environment up and running"
-            ]
+            ],
+            image: {
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQEnDcUZVpEdBw/company-logo_100_100/0?e=1587600000&v=beta&t=fryyaQmyjCmdDdxWhfG3PsNP4HQraDUIqESatkxAxUY",
+                imageAlt: "TechnologyOne logo"
+            }
         },
         {
             period: "July 2015 - Jan 2016",
@@ -68,7 +76,11 @@ function getJobsMock(): Job[] {
                 "Matching product lines to customer requirements",
                 "Developing a customised ordering system that enables actual costs to be measured in varying currencies so that the correct sales margins can be applied",
                 "Coordination and development of a website with e-commerce functionality"
-            ]
+            ],
+            image: {
+                imageUrl: "",
+                imageAlt: "Gear logo"
+            }
         },
         {
             period: "Feb 2012 - August 2012",
@@ -80,10 +92,14 @@ function getJobsMock(): Job[] {
             description: [
                 "As a Genius with Apple, my role was one with a large workflow scope. It required highly refined personal communication skills, and an advanced technical knowledge of all Apple’s hardware and software systems.There was a high focus on quality customer service, which required me to engage the customer but also solve problems quickly and effectively.",
                 "I was required to have detailed knowledge on all Apple’s portable devices, desktops and software packages which was put into practise both dealing with customers and when performing repairs. The role was fast paced with a strict adherence to personal time management when juggling the many customer interactions throughout the day."
-            ]
+            ],
+            image: {
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C560BAQHXUDASvvmq2g/company-logo_100_100/0?e=1587600000&v=beta&t=7PkW1XLaaAHYs_ZJkzMkAogj1Ng-if5kkem1AIbQW18",
+                imageAlt: "Apple logo"
+            }
         }
     ];
     return jobsArray;
 }
 
-export {getJobsMock};
+export { getJobsMock };

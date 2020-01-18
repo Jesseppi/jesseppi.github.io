@@ -51,10 +51,19 @@
     text-decoration: underline;
 }
 
-.flex {
+.flexColumn {
     display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.flexRowSpaceBetween {
+
+    @media @desktop {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .mainContainer {
@@ -101,11 +110,28 @@
         margin: 0px;
     }
 
-    h4:nth-child(1).ralewayTitle     {
+    h4:nth-child(1).ralewayTitle {
         font-family: 'Raleway', sans-serif;
     }
 }
 
 .jobDescription {
     font-weight: 800;
+}
+
+.resumeJobImage {
+    margin: 10px auto 10px auto;
+
+    img {
+        max-width: 75px;
+        border-radius: 2px;
+    }
+
+    svg {
+        max-width: 75px;
+    }
+}
+
+.inline {
+    display: inline-block;
 }

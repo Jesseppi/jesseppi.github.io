@@ -6,10 +6,16 @@ import "./index.less";
 
 import { getJobsMock } from "../../serviceMocks/jobs";
 import { getEducationHistory } from "../../serviceMocks/education";
+import { returnGearLogo } from "../../staticAssets/gearLogoSvg";
 
 interface JobOrganisation {
     name: string;
     location: string;
+}
+
+interface ImageDetail {
+    imageUrl: string;
+    imageAlt: string;
 }
 
 interface Job {
@@ -18,6 +24,7 @@ interface Job {
     position: string;
     description: string[];
     achievements?: string[];
+    image?: ImageDetail;
 }
 
 interface EducationInstitution {
@@ -30,45 +37,75 @@ interface EducationItem {
     certification: string;
     gpa?: string;
     period: string;
+    image?: ImageDetail;
+}
+
+function renderJobAndImage(image: ImageDetail, children: (classes: string[]) => JSX.Element) {
+    let classes: string[] = [];
+    if (image) {
+        classes.push("inline");
+        let imageBlockClasses = [...classes, "resumeJobImage"];
+        return (
+            <div className="flexRowSpaceBetween">
+                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo() }</ResumeBlock>
+                {children(classes)}
+            </div>);
+    } else {
+        return (children(classes));
+    }
+
+}
+
+function renderJobBlock(organisation: JobOrganisation, position: string, description: string[], achievements: string[], classes: string[]) {
+    classes.push("resumeJobBlock");
+    return (
+        <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={classes} key={position}>
+            <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
+            <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
+            {description && description?.map(paragraph => (
+                <p>{paragraph}</p>
+            ))}
+            {achievements &&
+                <div>
+                    <Heading level={HeadingLevel.h4} value="Achievements" uppercase={true} />
+                    <List listType={ListType.unordered} listItems={achievements} />
+                </div>
+            }
+        </ResumeBlock>
+    );
 }
 
 function renderJobBlocks() {
     let jobsArray = getJobsMock();
-    return (jobsArray.map(({ period, organisation, position, description, achievements }) => (
-        <div className="flex" key={`${period}${position}`}>
+    return (jobsArray.map(({ period, organisation, position, description, achievements, image }) => (
+        <div className="flexColumn" key={`${period}${position}`}>
             <ResumeBlock blockType={ResumeBlockType.section}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
-            <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock"]} key={position}>
-                <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
-                <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
-                {description && description?.map(paragraph => (
-                    <p>{paragraph}</p>
-                ))}
-                {achievements &&
-                    <div>
-                        <Heading level={HeadingLevel.h4} value="Achievements" uppercase={true} />
-                        <List listType={ListType.unordered} listItems={achievements} />
-                    </div>
-                }
-            </ResumeBlock>
+            {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
+
         </div>
     )));
 }
 
 function renderEducationBlocks() {
     let educationArray = getEducationHistory();
-    return (educationArray.map(({ period, gpa, certification, institution }) => (
-        <div className="flex" key={`${period}${institution}`} >
+    let classes: string[] = [];
+    classes.push("inline");
+    let imageBlockClasses = [...classes, "resumeJobImage"];
+    return (educationArray.map(({ period, gpa, certification, institution,image }) => (
+        <div className="flexColumn" key={`${period}${institution}`} >
             <ResumeBlock blockType={ResumeBlockType.section}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
-
+            <div className="flexRowSpaceBetween">
+                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
             <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
                 <Heading level={HeadingLevel.h4} value={`${institution.institution}, ${institution.location}`} uppercase={false} classes={["ralewayTitle"]} />
                 <Heading level={HeadingLevel.h4} value="Bachelor of Information Technology with Distinction" uppercase={true} />
                 {gpa && <Heading level={HeadingLevel.h4} value={`GPA: ${gpa}`} uppercase={true} />}
             </ResumeBlock>
+            </div>
         </div>)
     ));
 }
@@ -76,7 +113,7 @@ function renderEducationBlocks() {
 class ResumePage extends React.Component {
     render() {
         return (
-            <div id="resumeContainer" className="mainContainer flex">
+            <div id="resumeContainer" className="mainContainer flexColumn">
                 <div id="resumeTitle" className="rightContent oneHundredPercentViewWidth" >
                     <Heading level={HeadingLevel.h1} value="Curruculum Vitae" uppercase={true} />
                 </div>
