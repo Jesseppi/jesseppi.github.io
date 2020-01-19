@@ -121,7 +121,7 @@ class ResumePage extends React.Component {
                 </div>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeDetailBlock", "resumePersonalDetails", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h3} value="Jesse Cunningham-Creech" uppercase={true} classes={["nameTitle"]} />
-                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="hello@jessec.dev" uppercase={true} link="mailto:jesse.creech@gmail.com" classes={["inlineBlock", "marginLeft20px"]} /></div>
+                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="hello@jessec.dev" uppercase={true} link="mailto:hello@jessec.dev" classes={["inlineBlock", "marginLeft20px"]} /></div>
                     <Heading level={HeadingLevel.h3} value="www.linkedin.com/in/jesse-creech" uppercase={true} link="http://www.linkedin.com/in/jesse-creech" classes={["marginLeft32px"]} />
                 </ResumeBlock>
 
