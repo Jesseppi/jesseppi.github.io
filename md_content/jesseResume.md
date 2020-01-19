@@ -1,8 +1,7 @@
 # Curriculum Vitae
 
 **JESSE RYAN CUNNINGHAM-CREECH  
-M  0400 012 803  
-E  jesse.creech@gmail.com  
+E  hello@jessec.dev  
 Li  www.linkedin.com/in/jesse-creech**
 
 I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.
