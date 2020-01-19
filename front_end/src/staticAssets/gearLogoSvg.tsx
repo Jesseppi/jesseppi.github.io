@@ -1,7 +1,7 @@
 import * as React from "react";
 
 function returnGearLogo() {
-    return (<svg  version="1.1" id="Layer_1"  x="0px" y="0px" width="94px" height="94px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" >
+    return (<svg  version="1.1" id="Layer_1"  x="0px" y="0px" width="94px" height="94px" viewBox="0 0 700 700" enableBackground="new 0 0 700 700" >
         <path d="M350.5,7C161.895,7,9,159.895,9,348.5S161.895,690,350.5,690S692,537.105,692,348.5S539.105,7,350.5,7z M389.162,332.187
 c0,0-2.234,23.198-25.298,41.22c-1.002,12.788-0.92,26.215,0.925,37.305c0,0-17.355,6.628-24.503,10c0,0-3.1-60.889,10.509-93.202
 C361.166,302.883,393.05,301.585,389.162,332.187z M234.15,252.086c4.833-25.586,20.737-75.185,62.727-95.916

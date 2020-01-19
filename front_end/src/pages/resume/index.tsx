@@ -44,11 +44,11 @@ interface EducationItem {
 function renderJobAndImage(image: ImageDetail, children: (classes: string[]) => JSX.Element) {
     let classes: string[] = [];
     if (image) {
-        classes.push("inline");
+        classes.push("inlineBlock");
         let imageBlockClasses = [...classes, "resumeJobImage"];
         return (
             <div className="flexRowSpaceBetween">
-                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo() }</ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
                 {children(classes)}
             </div>);
     } else {
@@ -63,8 +63,8 @@ function renderJobBlock(organisation: JobOrganisation, position: string, descrip
         <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={classes} key={position}>
             <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
             <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
-            {description && description?.map(paragraph => (
-                <p>{paragraph}</p>
+            {description && description?.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
             ))}
             {achievements &&
                 <div>
@@ -80,6 +80,7 @@ function renderJobBlocks() {
     let jobsArray = getJobsMock();
     return (jobsArray.map(({ period, organisation, position, description, achievements, image }) => (
         <div className="flexColumn" key={`${period}${position}`}>
+            <hr />
             <ResumeBlock blockType={ResumeBlockType.section}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
@@ -92,20 +93,20 @@ function renderJobBlocks() {
 function renderEducationBlocks() {
     let educationArray = getEducationHistory();
     let classes: string[] = [];
-    classes.push("inline");
+    classes.push("inlineBlock");
     let imageBlockClasses = [...classes, "resumeJobImage"];
-    return (educationArray.map(({ period, gpa, certification, institution,image }) => (
+    return (educationArray.map(({ period, gpa, certification, institution, image }) => (
         <div className="flexColumn" key={`${period}${institution}`} >
             <ResumeBlock blockType={ResumeBlockType.section}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
             <div className="flexRowSpaceBetween">
                 <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
-            <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
-                <Heading level={HeadingLevel.h4} value={`${institution.institution}, ${institution.location}`} uppercase={false} classes={["ralewayTitle"]} />
-                <Heading level={HeadingLevel.h4} value="Bachelor of Information Technology with Distinction" uppercase={true} />
-                {gpa && <Heading level={HeadingLevel.h4} value={`GPA: ${gpa}`} uppercase={true} />}
-            </ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
+                    <Heading level={HeadingLevel.h4} value={`${institution.institution}, ${institution.location}`} uppercase={false} classes={["ralewayTitle"]} />
+                    <Heading level={HeadingLevel.h4} value="Bachelor of Information Technology with Distinction" uppercase={true} />
+                    {gpa && <Heading level={HeadingLevel.h4} value={`GPA: ${gpa}`} uppercase={true} />}
+                </ResumeBlock>
             </div>
         </div>)
     ));
@@ -120,8 +121,8 @@ class ResumePage extends React.Component {
                 </div>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeDetailBlock", "resumePersonalDetails", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h3} value="Jesse Cunningham-Creech" uppercase={true} classes={["nameTitle"]} />
-                    <div><Heading level={HeadingLevel.h3} value="M" uppercase={true} classes={["inline"]} /><Heading level={HeadingLevel.h3} value="0400 012 803" uppercase={true} classes={["inline", "marginLeft20px"]} /></div>
-                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inline"]} /><Heading level={HeadingLevel.h3} value="jesse.creech@gmail.com" uppercase={true} link="mailto:jesse.creech@gmail.com" classes={["inline", "marginLeft20px"]} /></div>
+                    <div><Heading level={HeadingLevel.h3} value="M" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="0400 012 803" uppercase={true} classes={["inlineBlock", "marginLeft20px"]} /></div>
+                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="jesse.creech@gmail.com" uppercase={true} link="mailto:jesse.creech@gmail.com" classes={["inlineBlock", "marginLeft20px"]} /></div>
                     <Heading level={HeadingLevel.h3} value="www.linkedin.com/in/jesse-creech" uppercase={true} link="http://www.linkedin.com/in/jesse-creech" classes={["marginLeft32px"]} />
                 </ResumeBlock>
 
