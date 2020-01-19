@@ -81,7 +81,7 @@ function renderJobBlocks() {
     return (jobsArray.map(({ period, organisation, position, description, achievements, image }) => (
         <div className="flexColumn" key={`${period}${position}`}>
             <hr />
-            <ResumeBlock blockType={ResumeBlockType.section}>
+            <ResumeBlock blockType={ResumeBlockType.section} classes={["resumeJobPeriodHeader"]}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
             {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
@@ -121,8 +121,7 @@ class ResumePage extends React.Component {
                 </div>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeDetailBlock", "resumePersonalDetails", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h3} value="Jesse Cunningham-Creech" uppercase={true} classes={["nameTitle"]} />
-                    <div><Heading level={HeadingLevel.h3} value="M" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="0400 012 803" uppercase={true} classes={["inlineBlock", "marginLeft20px"]} /></div>
-                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="jesse.creech@gmail.com" uppercase={true} link="mailto:jesse.creech@gmail.com" classes={["inlineBlock", "marginLeft20px"]} /></div>
+                    <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="hello@jessec.dev" uppercase={true} link="mailto:jesse.creech@gmail.com" classes={["inlineBlock", "marginLeft20px"]} /></div>
                     <Heading level={HeadingLevel.h3} value="www.linkedin.com/in/jesse-creech" uppercase={true} link="http://www.linkedin.com/in/jesse-creech" classes={["marginLeft32px"]} />
                 </ResumeBlock>
 
@@ -134,8 +133,8 @@ class ResumePage extends React.Component {
                     <Heading level={HeadingLevel.h3} value="Technical Skills" uppercase={true} />
                 </ResumeBlock>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth", "flexRow", "flexWrap"]}>
-                    {technicalSkills.map(skill => (
-                        <div className="resumeTechnicalSkillItem">{`>> ${skill}`}</div>
+                    {technicalSkills.map((skill, index) => (
+                        <div className="resumeTechnicalSkillItem" key={index}>{`>> ${skill}`}</div>
                     ))}
                 </ResumeBlock>
 
