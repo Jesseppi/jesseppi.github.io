@@ -7,6 +7,7 @@ import "./index.less";
 import { getJobsMock } from "../../serviceMocks/jobs";
 import { getEducationHistory } from "../../serviceMocks/education";
 import { returnGearLogo } from "../../staticAssets/gearLogoSvg";
+import { technicalSkills } from "../../serviceMocks/technicalSkills";
 
 interface JobOrganisation {
     name: string;
@@ -131,7 +132,11 @@ class ResumePage extends React.Component {
                 <ResumeBlock blockType={ResumeBlockType.section} classes={["sectionTitle"]} >
                     <Heading level={HeadingLevel.h3} value="Technical Skills" uppercase={true} />
                 </ResumeBlock>
-
+                <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth", "flexRow", "flexWrap"]}>
+                    {technicalSkills.map(skill => (
+                        <div className="resumeTechnicalSkillItem">{`>> ${skill}`}</div>
+                    ))}
+                </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.section} classes={["sectionTitle"]} >
                     <Heading level={HeadingLevel.h3} value="Employment" uppercase={true} />

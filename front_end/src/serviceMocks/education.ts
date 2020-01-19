@@ -1,8 +1,5 @@
 import { EducationItem, EducationInstitution } from "../pages/resume";
 
-
-
-
 function getEducationHistory(): EducationItem[] {
     let educationArray: EducationItem[] = [
         {

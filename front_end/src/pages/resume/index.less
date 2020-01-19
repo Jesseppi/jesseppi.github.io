@@ -57,6 +57,16 @@
     justify-content: flex-end;
 }
 
+.flexRow {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
 .flexRowSpaceBetween {
 
     @media @desktop {
@@ -120,7 +130,7 @@
 }
 
 .resumeJobImage {
-    margin: 10px auto 10px auto;
+    margin: @standardResumeMargin auto @standardResumeMargin auto;
 
     img {
         max-width: 75px;
@@ -134,4 +144,9 @@
 
 .inline {
     display: inline-block;
+}
+
+.resumeTechnicalSkillItem {
+    margin: 5px @standardResumeMargin 5px @standardResumeMargin;
+    max-width: 500px;
 }
