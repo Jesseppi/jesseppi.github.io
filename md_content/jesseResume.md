@@ -1,12 +1,20 @@
 # Curriculum Vitae
 
-**JESSE RYAN CUNNINGHAM-CREECH  
+***
+
+[comment]: # (Details Block)
+
+**JESSE RYAN CUNNINGHAM-CREECH**  
 E  hello@jessec.dev  
 Li  www.linkedin.com/in/jesse-creech**
 
 I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.
 
+***
+
 ## Technical Skills
+
+[comment]: # (Technical Skills Block Open)
 
 ```
 » C# / LINQ
@@ -21,8 +29,15 @@ I am a Web Developer with a good knowledge of core OO principles. I have extensi
 » Agile Development
 ```
 
-## Employment
+[comment]: # (Technical Skills Block Closed)
 ***
+
+## Employment
+
+***
+
+[comment]: # (Job Block)
+
 ### Senior Developer - New Technologies Team
 
 **TechnologyOne, QLD  
@@ -70,12 +85,13 @@ pushing myself and was reminded why I am so passionate about software developmen
 
 ### Junior >> Senior Developer - Platform Team
 
+[comment]: # (Job Block)
+
 **TechnologyOne, QLD  
 Jan 2016 - Jan 2018**
 
 ```
-I worked within the core platform team, delivering feature libraries for internal teams
-to utilise.
+I worked within the core platform team, delivering feature libraries for internal teams to utilise.
 
 My role required me to redesign how user access was implemented across the enterprise
 suite as well as how functions and their components were provisioned . This required me to
@@ -103,6 +119,8 @@ all need for technical knowledge to get an suite environment up and running
 ***
 
 ### Junior Developer
+
+[comment]: # (Job Block)
 
 **Lifeware, QLD  
 July 2015 - Jan 2016**
@@ -226,6 +244,8 @@ in this role.
 ***
 
 ## Education
+
+***
 
 2013 - 2015
 Queensland University of Technology, Brisbane, QLD  
