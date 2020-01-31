@@ -2,7 +2,7 @@
 
 ***
 
-[comment]: # (Details Block)
+[comment]: # (START Details Block)
 
 **JESSE RYAN CUNNINGHAM-CREECH**  
 E  hello@jessec.dev  
@@ -10,33 +10,37 @@ Li  www.linkedin.com/in/jesse-creech**
 
 I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.
 
+[comment]: # (END Details Block)
+
 ***
 
 ## Technical Skills
 
-[comment]: # (Technical Skills Block Open)
+[comment]: # (START Technical Skills Block)
 
 ```
 » C# / LINQ
-» TFS / Git / TeamCity » HTML
+» TFS / Git / TeamCity 
+» HTML
 » AWS Stack
 » ASP.NET / IIS
 » VisualStudio / Rider
 » CSS
 » Automated Testing / TDD
-» JavaScript / ReactJs / RxJs / Redux » Python / pip
+» JavaScript / ReactJs / RxJs / Redux
+» Python / pip
 » SQL / PostgreSQL
 » Agile Development
 ```
 
-[comment]: # (Technical Skills Block Closed)
+[comment]: # (END Technical Skills Block)
 ***
 
 ## Employment
 
 ***
 
-[comment]: # (Job Block)
+[comment]: # (START Job Block)
 
 ### Senior Developer - New Technologies Team
 
@@ -75,17 +79,23 @@ pushing myself and was reminded why I am so passionate about software developmen
 
 #### Achievements
 
+[comment]: # (START Achievement Block)
+
 ```
 • Delivering a new product with a new tech stack
 • Leading a high performing team
 • Developing an automated release pipeline
 ```
 
+[comment]: # (END Achievement Block)
+
+[comment]: # (END Job Block)
+
 ***
 
 ### Junior >> Senior Developer - Platform Team
 
-[comment]: # (Job Block)
+[comment]: # (START Job Block)
 
 **TechnologyOne, QLD  
 Jan 2016 - Jan 2018**
@@ -110,17 +120,22 @@ creating new code to be used by the patterns in their operation.
 
 #### Achievements
 
+[comment]: # (START Achievement Block)
+
 ```
 • Extensive involvement in the redesign of user access across the whole of the enterprise suite
 • Development of a deployment tool used for internal testing and support cases that removes
 all need for technical knowledge to get an suite environment up and running
 ```
 
+[comment]: # (END Achievement Block)
+
+[comment]: # (END Job Block)
 ***
 
 ### Junior Developer
 
-[comment]: # (Job Block)
+[comment]: # (START Job Block)
 
 **Lifeware, QLD  
 July 2015 - Jan 2016**
@@ -137,7 +152,11 @@ The work was fast paced and dictated by client deadlines. I reported directly to
 developer, who structured my workflow and provided me assistance when needed.
 ```
 
+[comment]: # (END Job Block)
+
 ***
+
+[comment]: # (START Job Block)
 
 ### Business Manager
 
@@ -155,6 +174,8 @@ tasks are strictly prioritised and executed to ensure the business’ continual 
 
 #### Achievements
 
+[comment]: # (START Achievement Block)
+
 ```
 • Improving daily cash holdings to ensure the business operates at a sustainable level,
 • Implementing a timely management financial reporting process,
@@ -164,7 +185,13 @@ currencies so that the correct sales margins can be applied
 • Coordination and development of a website with e-commerce functionality
 ```
 
+[comment]: # (END Achievement Block)
+
+[comment]: # (END Job Block)
+
 ***
+
+[comment]: # (START Job Block)
 
 ### Genius (Service Technician)
 
@@ -183,7 +210,11 @@ The role was fast paced with a strict adherence to personal time management when
 the many customer interactions throughout the day.
 ```
 
+[comment]: # (END Job Block)
+
 ***
+
+[comment]: # (START Job Block)
 
 ### Group Designer
 
@@ -203,7 +234,11 @@ function coordinators. I found the position rewarding as it pushed me as a desig
 required me to think outside just one facet of design.
 ```
 
+[comment]: # (END Job Block)
+
 ***
+
+[comment]: # (START Job Block)
 
 ### Junior Designer / Financial Manager
 
@@ -222,7 +257,11 @@ able to track both payable’s and receivables whilst establishing a reliable fi
 owner’s equity.
 ```
 
+[comment]: # (END Job Block)
+
 ***
+
+[comment]: # (START Job Block)
 
 ### Graduate Accountant - Audit / Recovery & Reorganisation
 
@@ -241,11 +280,15 @@ principal contact with a major client and entrusted with substantial responsibil
 in this role.
 ```
 
+[comment]: # (END Job Block)
+
 ***
 
 ## Education
 
 ***
+
+[comment]: # (START Education Block)
 
 2013 - 2015
 Queensland University of Technology, Brisbane, QLD  
@@ -258,6 +301,8 @@ Shillington College, Brisbane, QLD
 2005 - 2008
 Queensland University of Technology, Brisbane, QLD  
 **Bachelor of Business (Accounting / Professional Accounting) - GPA: 5.25**
+
+[comment]: # (END Education Block)
 
 ***
 
