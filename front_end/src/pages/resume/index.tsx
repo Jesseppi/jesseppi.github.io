@@ -82,7 +82,8 @@ function renderJobBlocks() {
         <div className="flexColumn" key={`${period}${position}`}>
             <hr />
             <ResumeBlock blockType={ResumeBlockType.section} classes={["resumeJobPeriodHeader"]}>
-                <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
+                <div>{period}</div>
+                {/* <Heading level={HeadingLevel.h5} value={period} uppercase={false} /> */}
             </ResumeBlock>
             {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
 
@@ -113,6 +114,17 @@ function renderEducationBlocks() {
 }
 
 class ResumePage extends React.Component {
+
+    componentDidMount() {
+        window.addEventListener("scroll", e => {
+            // Dealing with Safari difference.
+            // look into scrollingElement https://caniuse.com/#feat=document-scrollingelement
+            let scrollTop = document.body.scrollTop ? document.body.scrollTop : document.documentElement.scrollTop;
+            let newPos = scrollTop + "px";
+            document.documentElement.style.setProperty("--scrollPos", newPos);
+        });
+    }
+
     render() {
         return (
             <div id="resumeContainer" className="mainContainer flexColumn">
@@ -121,6 +133,7 @@ class ResumePage extends React.Component {
                 </div>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeDetailBlock", "resumePersonalDetails", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h3} value="Jesse Cunningham-Creech" uppercase={true} classes={["nameTitle"]} />
+                    <div className="scrollHighlight"></div>
                     <div><Heading level={HeadingLevel.h3} value="E" uppercase={true} classes={["inlineBlock"]} /><Heading level={HeadingLevel.h3} value="hello@jessec.dev" uppercase={true} link="mailto:hello@jessec.dev" classes={["inlineBlock", "marginLeft20px"]} /></div>
                     <Heading level={HeadingLevel.h3} value="www.linkedin.com/in/jesse-creech" uppercase={true} link="http://www.linkedin.com/in/jesse-creech" classes={["marginLeft32px"]} />
                 </ResumeBlock>
@@ -130,7 +143,7 @@ class ResumePage extends React.Component {
                 </ResumeBlock>
 
                 <ResumeBlock blockType={ResumeBlockType.section} classes={["sectionTitle"]} >
-                    <Heading level={HeadingLevel.h3} value="Technical Skills" uppercase={true} />
+                    <div>Technical Skills</div>
                 </ResumeBlock>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth", "flexRow", "flexWrap"]}>
                     {technicalSkills.map((skill, index) => (

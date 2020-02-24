@@ -40,11 +40,17 @@ var config =
             {
                 test: /\.html$/,
                 loader: "html-loader"
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({template: "./public/index.html", filename: "index.html"}),
+        new HtmlWebpackPlugin({ template: "./public/index.html", filename: "index.html" }),
     ],
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
@@ -70,7 +76,7 @@ var config =
     }
 }
 
-if(!prod){
+if (!prod) {
     config.plugins.push(new CleanWebpackPlugin());
 }
 

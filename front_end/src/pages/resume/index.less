@@ -166,3 +166,17 @@ hr {
         border-color: #ffffff;
     }
 }
+
+.scrollHighlight {
+    width:32px;
+    height: 10px;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/spectrum.svg);
+    background-repeat: repeat-x;
+    background-size: 100vw 0.2em;
+    background-position: left bottom 5px;
+    background-position-x: var(--scrollPos);
+
+    &:nth-of-type(2) {
+        background-position-x: calc(var(--offset) + var(--scrollPos));
+    }
+}
