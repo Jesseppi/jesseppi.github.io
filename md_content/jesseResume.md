@@ -20,7 +20,7 @@ I am a Web Developer with a good knowledge of core OO principles. I have extensi
 
 ```
 » C# / LINQ
-» TFS / Git / TeamCity 
+» TFS / Git / TeamCity
 » HTML
 » AWS Stack
 » ASP.NET / IIS
@@ -124,8 +124,7 @@ creating new code to be used by the patterns in their operation.
 
 ```
 • Extensive involvement in the redesign of user access across the whole of the enterprise suite
-• Development of a deployment tool used for internal testing and support cases that removes
-all need for technical knowledge to get an suite environment up and running
+• Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get an suite environment up and running
 ```
 
 [comment]: # (END Achievement Block)
@@ -180,8 +179,7 @@ tasks are strictly prioritised and executed to ensure the business’ continual 
 • Improving daily cash holdings to ensure the business operates at a sustainable level,
 • Implementing a timely management financial reporting process,
 • Matching product lines to customer requirements
-• Developing a customised ordering system that enables actual costs to be measured in varying
-currencies so that the correct sales margins can be applied
+• Developing a customised ordering system that enables actual costs to be measured in varying currencies so that the correct sales margins can be applied
 • Coordination and development of a website with e-commerce functionality
 ```
 
