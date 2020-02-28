@@ -41,14 +41,17 @@ interface EducationItem {
     image?: ImageDetail;
 }
 
-function renderJobAndImage(image: ImageDetail, children: (classes: string[]) => JSX.Element) {
+function renderJobAndImage(period: string, image: ImageDetail, children: (classes: string[]) => JSX.Element) {
     let classes: string[] = [];
     if (image) {
         classes.push("inlineBlock");
         let imageBlockClasses = [...classes, "resumeJobImage"];
         return (
             <div className="flexRowSpaceBetween">
-                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>
+                    <Heading level={HeadingLevel.h5} value={period} uppercase={false} classes={["resumeJobPeriodHeader"]} />
+                    {image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}
+                </ResumeBlock>
                 {children(classes)}
             </div>);
     } else {
@@ -80,11 +83,9 @@ function renderJobBlocks() {
     let jobsArray = getJobsMock();
     return (jobsArray.map(({ period, organisation, position, description, achievements, image }) => (
         <div className="flexColumn" key={`${period}${position}`}>
-            <hr />
-            <ResumeBlock blockType={ResumeBlockType.section} classes={["resumeJobPeriodHeader"]}>
-                <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
-            </ResumeBlock>
-            {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
+            {/* <ResumeBlock blockType={ResumeBlockType.section} classes={["resumeJobPeriodHeader"]}>
+            </ResumeBlock> */}
+            {renderJobAndImage(period, image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
 
         </div>
     )));

@@ -118,6 +118,8 @@
 
     h4 {
         margin: 0px;
+        position:sticky;
+        top:0;
     }
 
     h4:nth-child(1).ralewayTitle {
@@ -126,7 +128,10 @@
 }
 
 .resumeJobPeriodHeader {
+    margin-bottom: 20px !important;
+
     @media @phone {
+        margin-bottom: 5px !important;
         padding-top: @standardResumeMargin;
     }
 }
@@ -136,6 +141,8 @@
 }
 
 .resumeJobImage {
+    position: sticky;
+    top: 0;
     margin: @standardResumeMargin auto @standardResumeMargin auto;
 
     @media @phone {
