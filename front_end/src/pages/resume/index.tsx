@@ -64,8 +64,10 @@ function renderJobBlock(organisation: JobOrganisation, position: string, descrip
     classes.push("resumeJobBlock");
     return (
         <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={classes} key={position}>
-            <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
-            <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
+            <div className="resumeJobTitleBlock">
+                <Heading level={HeadingLevel.h4} value={`${organisation.name}, ${organisation.location}`} uppercase={false} classes={["ralewayTitle"]} />
+                <Heading level={HeadingLevel.h4} value={position} uppercase={true} classes={["jobDescription"]} />
+            </div>
             {description && description?.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
             ))}
