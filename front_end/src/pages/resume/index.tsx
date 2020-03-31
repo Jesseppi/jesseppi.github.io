@@ -104,7 +104,7 @@ function renderEducationBlocks() {
                 <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h4} value={`${institution.institution}, ${institution.location}`} uppercase={false} classes={["ralewayTitle"]} />
-                    <Heading level={HeadingLevel.h4} value="Bachelor of Information Technology with Distinction" uppercase={true} />
+                    <Heading level={HeadingLevel.h4} value={certification} uppercase={true} />
                     {gpa && <Heading level={HeadingLevel.h4} value={`GPA: ${gpa}`} uppercase={true} />}
                 </ResumeBlock>
             </div>
