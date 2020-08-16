@@ -21,7 +21,7 @@ function getJobsMock(): Job[] {
                 "Developing an automated release pipeline"
             ],
             image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_100_100/0?e=1596067200&v=beta&t=Va3GP3We27sAHqYdM_WnczNpiS_wCqOKZAxTNr0zCmo",
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
                 imageAlt: "TechnologyOne logo"
             }
         },
@@ -42,7 +42,7 @@ function getJobsMock(): Job[] {
                 "Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get an suite environment up and running"
             ],
             image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_100_100/0?e=1596067200&v=beta&t=Va3GP3We27sAHqYdM_WnczNpiS_wCqOKZAxTNr0zCmo",
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
                 imageAlt: "TechnologyOne logo"
             }
         },
@@ -94,7 +94,7 @@ function getJobsMock(): Job[] {
                 "I was required to have detailed knowledge on all Apple’s portable devices, desktops and software packages which was put into practise both dealing with customers and when performing repairs. The role was fast paced with a strict adherence to personal time management when juggling the many customer interactions throughout the day."
             ],
             image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C560BAQHXUDASvvmq2g/company-logo_100_100/0?e=1596067200&v=beta&t=oqw7QFOxDLfaHeFNcOGTl4CVm9wgr5L6rQSAeaNOaP4",
+                imageUrl: "https://media-exp1.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0?e=1605744000&v=beta&t=BpGtXQcz3ypzxjuRdu-oKvOCZo5Jr3E4oNCl32qSEa0",
                 imageAlt: "Apple logo"
             }
         }
