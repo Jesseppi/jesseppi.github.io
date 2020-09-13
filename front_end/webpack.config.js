@@ -66,7 +66,20 @@ var config =
             poll: true,
             ignored: /node_modules/
         },
-        https: true
+        https: true,
+        // headers:{
+        //     "Access-Control-Allow-Origin": "*",
+        //     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+        //     "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+        // },
+        proxy: {
+            ["/api/v1"]: {
+                target: "https://127.0.0.1:5001",
+                pathRewrite: { "/api/v1": "/api/v1" },
+                secure: false,
+                changeOrigin: true
+            }
+        }
     }
 }
 
