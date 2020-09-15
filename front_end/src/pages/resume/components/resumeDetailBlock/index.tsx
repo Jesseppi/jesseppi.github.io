@@ -11,32 +11,27 @@ interface ResumeBlockProps {
     classes?: string[];
 }
 
-class ResumeBlock extends React.Component<ResumeBlockProps> {
-    static defaultProps: Partial<ResumeBlockProps> = {
-        rightJustifiedBlock: false
-    };
+export const ResumeBlock: React.FunctionComponent<ResumeBlockProps> = ({ blockType, rightJustifiedBlock = false, classes, children }) => {
 
-    render() {
-        let classNames: string[] = [];
-        if (this.props.blockType === ResumeBlockType.detail) classNames.push("resumeDetailBlock");
-        if (this.props.blockType === ResumeBlockType.section) classNames.push("resumeSectionBlock");
-        if (!this.props.rightJustifiedBlock) classNames.push("leftContent");
-        if (this.props.rightJustifiedBlock) classNames.push("rightContent");
+    let classNames: string[] = [];
 
-        if (this.props.classes !== undefined) {
-            this.props.classes.map((className: string) => {
-                classNames.push(className);
-            });
-        }
-        return (
+    if (blockType === ResumeBlockType.detail) classNames.push("resumeDetailBlock");
+    if (blockType === ResumeBlockType.section) classNames.push("resumeSectionBlock");
+    if (!rightJustifiedBlock) classNames.push("leftContent");
+    if (rightJustifiedBlock) classNames.push("rightContent");
 
-            <div className={classNames.join(" ")}>
-                {this.props.children}
-            </div>
-
-        );
+    if (classes !== undefined) {
+        classes.map((className: string) => {
+            classNames.push(className);
+        });
     }
-}
+    return (
+
+        <div className={classNames.join(" ")}>
+            {children}
+        </div>
+    );
+};
 
 export default ResumeBlock;
 export { ResumeBlockType };

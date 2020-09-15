@@ -1,13 +1,6 @@
 import { Job } from "../pages/resume";
 
 function getJobsMock(): Job[] {
-    fetch("/api/v1/resume/1", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-        .then(response => console.log(response.json()));
     let jobsArray: Job[] = [
         {
             period: "Jan 2018 - Present",
