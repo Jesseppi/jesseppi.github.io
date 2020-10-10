@@ -9,9 +9,13 @@ export interface Job {
     image?: ImageDetail;
 }
 
-export interface JobOrganisation {
-    name: string;
-    location: string;
+export interface Location {
+    state?: string;
+    city?: string;
+    country?: string;
 }
 
-
+export interface JobOrganisation {
+    name: string;
+    location: Location;
+}

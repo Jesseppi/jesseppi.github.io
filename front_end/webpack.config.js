@@ -62,16 +62,11 @@ var config =
         port: 8080,
         open: false,
         watchContentBase: true,
-        watchOptions: {
-            poll: true,
-            ignored: /node_modules/
-        },
-        https: true,
-        // headers:{
-        //     "Access-Control-Allow-Origin": "*",
-        //     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-        //     "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+        // watchOptions: {
+        //     poll: true,
+        //     ignored: /node_modules/
         // },
+        https: true,
         proxy: {
             ["/api/v1"]: {
                 target: "https://127.0.0.1:5001",

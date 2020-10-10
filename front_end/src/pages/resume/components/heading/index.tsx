@@ -40,32 +40,32 @@ class Heading extends React.Component<HeadingProps> {
         switch (props.level) {
             case HeadingLevel.h1:
                 return (
-                    <h1 className={classesString}>{props.uppercase ? props.value.toUpperCase() : props.value}</h1>
+                    <h1 className={classesString}>{props.uppercase && props.value ? props.value.toUpperCase() : props.value}</h1>
                 );
                 break;
             case HeadingLevel.h2:
                 return (
-                    <h2 className={classesString}>{props.uppercase ? props.value.toUpperCase() : props.value}</h2>
+                    <h2 className={classesString}>{props.uppercase && props.value ? props.value.toUpperCase() : props.value}</h2>
                 );
                 break;
             case HeadingLevel.h3:
                 return (
-                    <h3 className={classesString}>{props.uppercase ? props.value.toUpperCase() : props.value}</h3>
+                    <h3 className={classesString}>{props.uppercase && props.value ? props.value.toUpperCase() : props.value}</h3>
                 );
                 break;
             case HeadingLevel.h4:
                 return (
-                    <h4 className={classesString}>{props.uppercase ? props.value.toUpperCase() : props.value}</h4>
+                    <h4 className={classesString}>{props.uppercase && props.value ? props.value.toUpperCase() : props.value}</h4>
                 );
                 break;
             case HeadingLevel.h5:
                 return (
-                    <h5 className={classesString}>{props.uppercase ? props.value.toUpperCase() : props.value}</h5>
+                    <h5 className={classesString}>{props.uppercase && props.value ? props.value.toUpperCase() : props.value}</h5>
                 );
                 break;
             default:
                 return (
-                    <h1 className={classesString}>{props.value}</h1>
+                    <h1 className={classesString}>{props?.value}</h1>
                 );
                 break;
         }

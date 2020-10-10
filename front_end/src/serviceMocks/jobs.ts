@@ -5,7 +5,10 @@ function getJobsMock(): Job[] {
         {
             period: "Jan 2018 - Present",
             organisation: {
-                location: "QLD",
+                location: {
+                    city: "Brisbane",
+                    state: "QLD",
+                },
                 name: "TechnologyOne"
             },
             position: "Senior Developer - New Technologies Team",
@@ -28,7 +31,10 @@ function getJobsMock(): Job[] {
         {
             period: "Jan 2016 - Jan 2018",
             organisation: {
-                location: "QLD",
+                location: {
+                    city: "Brisbane",
+                    state: "QLD",
+                },
                 name: "TechnologyOne"
             },
             position: "Junior >> Senior Developer - Platform Team",
@@ -49,7 +55,10 @@ function getJobsMock(): Job[] {
         {
             period: "July 2015 - Jan 2016",
             organisation: {
-                location: "QLD",
+                location: {
+                    city: "Brisbane",
+                    state: "QLD",
+                },
                 name: "Lifeware"
             },
             position: "Junior Developer",
@@ -62,7 +71,10 @@ function getJobsMock(): Job[] {
         {
             period: "August 2012 - July 2015",
             organisation: {
-                location: "QLD",
+                location: {
+                    city: "Brisbane",
+                    state: "QLD",
+                },
                 name: "Gear Shop Brisbane"
             },
             position: "Business Manager",
@@ -85,7 +97,10 @@ function getJobsMock(): Job[] {
         {
             period: "Feb 2012 - August 2012",
             organisation: {
-                location: "QLD",
+                location: {
+                    city: "Brisbane",
+                    state: "QLD",
+                },
                 name: "Apple"
             },
             position: "Genius (Service Technician)",
