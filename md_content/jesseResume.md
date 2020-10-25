@@ -42,6 +42,11 @@ I am a Web Developer with a good knowledge of OO principles. I have extensive kn
 
 [comment]: # (START Job Block)
 
+[comment]: # (START Image Block)
+altText: TechnologyOne Logo
+url: https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q
+[comment]: # (END Image Block)
+
 ### Senior Developer - New Technologies Team
 
 **TechnologyOne, QLD  
@@ -94,6 +99,11 @@ pushing myself and was reminded why I am so passionate about software developmen
 ***
 
 [comment]: # (START Job Block)
+
+[comment]: # (START Image Block)
+altText: TechnologyOne Logo
+url: https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q
+[comment]: # (END Image Block)
 
 ### Junior >> Senior Developer - Platform Team
 
@@ -188,6 +198,11 @@ with studying fulltime to complete my Information Technology Degree which requir
 
 [comment]: # (START Job Block)
 
+[comment]: # (START Image Block)
+altText: Apple Logo
+url: https://media-exp1.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0?e=1605744000&v=beta&t=BpGtXQcz3ypzxjuRdu-oKvOCZo5Jr3E4oNCl32qSEa0
+[comment]: # (END Image Block)
+
 ### Genius (Service Technician)
 
 **Apple, Brisbane, QLD  
@@ -257,6 +272,12 @@ owner’s equity.
 ***
 
 [comment]: # (START Job Block)
+
+[comment]: # (START Image Block)
+altText: GT Logo
+url: https://media-exp1.licdn.com/dms/image/C560BAQEYEiGKIpMV4g/company-logo_100_100/0?e=1611792000&v=beta&t=bfra7cyjEX1VQSnS0XTDiDREJlg66XEvY71Y6ZFDw-Q
+[comment]: # (END Image Block)
+
 
 ### Graduate Accountant - Audit / Recovery & Reorganisation
 
