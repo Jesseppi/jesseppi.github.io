@@ -8,7 +8,7 @@
 E  hello@jessec.dev  
 Li  www.linkedin.com/in/jesse-creech**
 
-I am a Web Developer with a good knowledge of core OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.
+I am a Web Developer with a good knowledge of OO principles. I have extensive knowledge of the enterprise software development life cycle as well as previous expertise in front end UX design. I aspire to be a key member of a high performing development team, utilising the latest technologies and development practises. I look for opportunities that will challenge me so that I can continuously improve as a developer, whilst working on projects that I find fascinating.
 
 [comment]: # (END Details Block)
 
@@ -51,9 +51,9 @@ Jan 2018 - Present**
 Being a part of the New Technologies team has allowed me to define myself as a leader.
 I lead a team of 4 developers, with oversight from a director. I have overseen a project
 from inception to a working product and have been crucial in its success. The project has
-utilised the ReactJs library using JavaScript, TypeScript and CSS to create an multi SPA
-product running both as a web app and a native app using ReactNative. The project has
-progressed through both research and development phases utilising the Agile Methodology,
+predominantly used the ReactJs library using JavaScript, TypeScript and CSS to create a
+multi SPA product running both as a web app and a native app using ReactNative. The project has
+progressed through both research and development phases under the Agile Methodology,
 which allowed the team to remain focussed and driven. I ran all stand ups and coordinated
 sprint planning as well the workload of junior developers.
 
@@ -66,11 +66,11 @@ the back end infrastructure to supply the client with a RESTful API.
 I jointly defined the deployment model for the apps client side code. I developed the
 deployment infrastructure within TeamCity and AWS where code can progress from being
 checked in, to live in production within 2-5 minutes. The deployment stack uses many
-AWS resources including CloudFront, ApiGateway and S3. My aim was to remove as much manual
-handling within the deployment pipeline as possible. Apart from code check in, the
-pipeline has no need for human input to deliver code to the client machine.
+AWS resources including CloudFront, ApiGateway, Lambdas and S3 Buckets. My aim was to remove
+as much manual handling within the deployment pipeline as possible. Apart from code check in,
+the pipeline has no need for human input to deliver code to the client machine.
 
-The project has required that I upskill in a lot of areas. I have had to manage people,
+The project has required that I up skill in a lot of areas. I have had to manage people,
 liaise with many internal teams, provide assistance and training as well as deliver code
 of my own. I have stepped well outside my comfort zone because I saw a challenge that would
 provide me with a wealth of experience and great learning curve. I have really enjoyed
@@ -82,7 +82,7 @@ pushing myself and was reminded why I am so passionate about software developmen
 [comment]: # (START Achievement Block)
 
 ```
-• Delivering a new product with a new tech stack
+• Delivering a product with a new tech stack
 • Leading a high performing team
 • Developing an automated release pipeline
 ```
@@ -93,29 +93,26 @@ pushing myself and was reminded why I am so passionate about software developmen
 
 ***
 
-### Junior >> Senior Developer - Platform Team
-
 [comment]: # (START Job Block)
+
+### Junior >> Senior Developer - Platform Team
 
 **TechnologyOne, QLD  
 Jan 2016 - Jan 2018**
 
 ```
-I worked within the core platform team, delivering feature libraries for internal teams to utilise.
+I worked within the Core Platform Team, delivering feature libraries for internal teams to utilise.
 
 My role required me to redesign how user access was implemented across the enterprise
 suite as well as how functions and their components were provisioned . This required me to
-me work with senior developers to map out the schema and entity relationships required to
-facilitate efficient set based SQL calls which would then be packaged in an API for all
+work with Enterprise Architects to map out the entity relationships required.
+The code had to facilitate efficient set based SQL calls which would then be packaged in an API for all
 product teams to utilise. Once the schema was completed I applied OO principles and TDD to
 develop the API as well as build up the user interface for system administrators to manage
 their users.
 
-My development stack included SQL,PostgreSQL,C#, JavaScript, HTML5, and CSS. In the
-platform team I mainly worked on server side code which is then used by proprietary
-patterns to render the client side using the MVC framework. My work has been a combination
-of working within these patterns to create new functional screens within the product and
-creating new code to be used by the patterns in their operation.
+My development stack included SQL, PostgreSQL, C#, JavaScript, HTML5, and CSS. In the
+platform team I mainly worked on server side code.
 ```
 
 #### Achievements
@@ -124,7 +121,7 @@ creating new code to be used by the patterns in their operation.
 
 ```
 • Extensive involvement in the redesign of user access across the whole of the enterprise suite
-• Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get an suite environment up and running
+• Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get a test environment up and running
 ```
 
 [comment]: # (END Achievement Block)
@@ -132,9 +129,9 @@ creating new code to be used by the patterns in their operation.
 [comment]: # (END Job Block)
 ***
 
-### Junior Developer
-
 [comment]: # (START Job Block)
+
+### Junior Developer
 
 **Lifeware, QLD  
 July 2015 - Jan 2016**
@@ -165,10 +162,10 @@ August 2012 - July 2015**
 ```
 This role allowed me to combine my passion for cycling whilst developing and honing many
 of my business skills. To successfully manage the business on behalf of the owner, I had
-to utilise my skills including financial and staff management, stock control, customer
-liaison and most importantly, time management. I combined this role with studying full
-time to complete my Information Technology degree which has required me to make sure that
-tasks are strictly prioritised and executed to ensure the business’ continual success.
+to draw on my skills in financial management and hone my skills staff management,
+stock control, customer liaison and most importantly, time management. I combined this role
+with studying fulltime to complete my Information Technology Degree which required me
+ to make sure that tasks are strictly prioritised and executed to ensure the business’ continual success.
 ```
 
 #### Achievements
@@ -197,10 +194,10 @@ tasks are strictly prioritised and executed to ensure the business’ continual 
 Feb 2012 - August 2012**
 
 ```
-As a Genius with Apple, my role was one with a large workflow scope. It required highly
+As a Genius with Apple, the scope of my role was quite wide. I was required to have well
 refined personal communication skills, and an advanced technical knowledge of all Apple’s
 hardware and software systems. There was a high focus on quality customer service, which
-required me to engage the customer but also solve problems quickly and effectively.
+required me to engage the customer and solve problems quickly and effectively.
 
 I was required to have detailed knowledge on all Apple’s portable devices, desktops and software
 packages which was put into practise both dealing with customers and when performing repairs.
@@ -225,8 +222,8 @@ branding of the four venues under the group. The position exposed me to many dif
 facets of design, including web design, web maintenance, print design, billboard design
 and logo development.
 
-There was no supervision from a senior designer which necessitated
-that I learn on the job through self learning, and problem solving. It also meant that I
+There was no supervision from a senior designer which necessitated that I learn on the job
+through self learning, and problem solving. It also meant that I
 became confident liaising with external parties including printers, suppliers, and
 function coordinators. I found the position rewarding as it pushed me as a designer and
 required me to think outside just one facet of design.
@@ -247,7 +244,7 @@ Jan 2010 - Dec 2010**
 Whilst initially being taken on as an intern at Grand Scheme, I stepped into the duties of
 a part time designer and financial manager. I had to manage multiple responsibilities all
 with short deadlines and with limited guidance. I was required to work independently on
-projects within both roles with a high attention paid to detail as my work could not always
+projects within both roles. This required a high attention paid to detail as my work could not always
 be reviewed.
 
 My key achievement was setting up an accounting system with limited resources that was
@@ -267,9 +264,9 @@ owner’s equity.
 Feb 2009 - Aug 2009**
 
 ```
-On graduating from Queensland University of Technology, I actively pursued a career as an
-accounting graduate with the global accounting group Grant Thornton. In my role as a
-graduate accountant, I worked within the Audit and Insolvency departments.
+On graduating from Queensland University of Technology, I pursued a career as an
+accountant, becoming a graduate accountant with the global accounting group Grant Thornton.
+In my role as a graduate accountant, I worked within the Audit and Insolvency departments.
 
 Working within both these departments enabled me to interact directly with clients on a
 daily basis, gain a thorough understanding of business procedures and refine my skills in
