@@ -56,14 +56,9 @@ export const renderJobBlock = (organisation: JobOrganisation, position: string, 
 export const getDescriptionParagraphs = (description: string[]): JSX.Element[] => {
     {
         if (description.length < 1) return null;
-        let array: JSX.Element[]  = [];
-        let paragraph = "";
+        let array: JSX.Element[] = [];
         description.forEach((line, index) => {
-            if (line !== "") {
-                paragraph = paragraph.concat(" ", ` ${line}`);
-            } else {
-                array.push(<p key={index}>{paragraph}</p>);
-            }
+            array.push(<p key={index}>{line}</p>);
         });
         return array;
     }
