@@ -42,6 +42,11 @@ I am a Web Developer with a good knowledge of core OO principles. I have extensi
 
 [comment]: # (START Job Block)
 
+[comment]: # (START Image Block)
+altText: TechnologyOne Logo
+url: https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q
+[comment]: # (END Image Block)
+
 ### Senior Developer - New Technologies Team
 
 **TechnologyOne, QLD  

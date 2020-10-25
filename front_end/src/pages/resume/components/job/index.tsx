@@ -17,8 +17,8 @@ export const renderJobAndImage = (image: ImageDetail, children: (classes: string
                 <ResumeBlock
                     blockType={ResumeBlockType.section}
                     classes={imageBlockClasses}>
-                    {image.imageAlt !== "Gear logo"
-                        ? <img alt={image.imageAlt} src={image.imageUrl} />
+                    {image.altText !== "Gear logo"
+                        ? <img alt={image.altText} src={image.url} />
                         : returnGearLogo()}
                 </ResumeBlock>
                 {children(classes)}
@@ -43,7 +43,7 @@ export const renderJobBlock = (organisation: JobOrganisation, position: string, 
                 <p key={index}>{paragraph}</p>
             ))} */}
             {getDescriptionParagraphs(description)}
-            {achievements &&
+            {achievements.length > 0 &&
                 <div>
                     <Heading level={HeadingLevel.h4} value="Achievements" uppercase={true} />
                     <List listType={ListType.unordered} listItems={achievements} />
@@ -65,15 +65,13 @@ export const getDescriptionParagraphs = (description: string[]): JSX.Element[] =
 };
 
 export const renderJobBlocks = (jobs: Job[]) => {
-    return (jobs.map(({ period, organisation, position, description, achievements, image }) => (
+    return (jobs.map(({ period, organisation, position, description, achievements }) => (
         <div className="flexColumn" key={`${period}${position}`}>
             <hr />
             <ResumeBlock blockType={ResumeBlockType.section} classes={["resumeJobPeriodHeader"]}>
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
-            {/* {renderJobAndImage(image, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))} */}
-            {renderJobBlock(organisation, position, description, achievements, [])}
-
+            {renderJobAndImage(organisation.logo, (classes: string[]) => renderJobBlock(organisation, position, description, achievements, classes))}
         </div>
     )));
 };

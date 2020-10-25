@@ -9,7 +9,11 @@ function getJobsMock(): Job[] {
                     city: "Brisbane",
                     state: "QLD",
                 },
-                name: "TechnologyOne"
+                name: "TechnologyOne",
+                logo: {
+                    url: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
+                    altText: "TechnologyOne logo"
+                }
             },
             position: "Senior Developer - New Technologies Team",
             description: [
@@ -22,11 +26,7 @@ function getJobsMock(): Job[] {
                 "Delivering a new product with a new tech stack",
                 "Leading a high performing team",
                 "Developing an automated release pipeline"
-            ],
-            image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
-                imageAlt: "TechnologyOne logo"
-            }
+            ]
         },
         {
             period: "Jan 2016 - Jan 2018",
@@ -35,7 +35,11 @@ function getJobsMock(): Job[] {
                     city: "Brisbane",
                     state: "QLD",
                 },
-                name: "TechnologyOne"
+                name: "TechnologyOne",
+                logo: {
+                    url: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
+                    altText: "TechnologyOne logo"
+                }
             },
             position: "Junior >> Senior Developer - Platform Team",
             description: [
@@ -46,11 +50,7 @@ function getJobsMock(): Job[] {
             achievements: [
                 "Extensive involvement in the redesign of user access across the whole of the enterprise suite",
                 "Development of a deployment tool used for internal testing and support cases that removes all need for technical knowledge to get an suite environment up and running"
-            ],
-            image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGPtK6Y9-mAEQ/company-logo_200_200/0?e=2159024400&v=beta&t=HZwmV9o79iTXFkxtcciBfvJugq0hk6bDevGVNdLlI9Q",
-                imageAlt: "TechnologyOne logo"
-            }
+            ]
         },
         {
             period: "July 2015 - Jan 2016",
@@ -75,7 +75,11 @@ function getJobsMock(): Job[] {
                     city: "Brisbane",
                     state: "QLD",
                 },
-                name: "Gear Shop Brisbane"
+                name: "Gear Shop Brisbane",
+                logo: {
+                    url: "",
+                    altText: "Gear logo"
+                }
             },
             position: "Business Manager",
             description: [
@@ -89,10 +93,6 @@ function getJobsMock(): Job[] {
                 "Developing a customised ordering system that enables actual costs to be measured in varying currencies so that the correct sales margins can be applied",
                 "Coordination and development of a website with e-commerce functionality"
             ],
-            image: {
-                imageUrl: "",
-                imageAlt: "Gear logo"
-            }
         },
         {
             period: "Feb 2012 - August 2012",
@@ -101,17 +101,17 @@ function getJobsMock(): Job[] {
                     city: "Brisbane",
                     state: "QLD",
                 },
-                name: "Apple"
+                name: "Apple",
+                logo: {
+                    url: "https://media-exp1.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0?e=1605744000&v=beta&t=BpGtXQcz3ypzxjuRdu-oKvOCZo5Jr3E4oNCl32qSEa0",
+                    altText: "Apple logo"
+                }
             },
             position: "Genius (Service Technician)",
             description: [
                 "As a Genius with Apple, my role was one with a large workflow scope. It required highly refined personal communication skills, and an advanced technical knowledge of all Apple’s hardware and software systems.There was a high focus on quality customer service, which required me to engage the customer but also solve problems quickly and effectively.",
                 "I was required to have detailed knowledge on all Apple’s portable devices, desktops and software packages which was put into practise both dealing with customers and when performing repairs. The role was fast paced with a strict adherence to personal time management when juggling the many customer interactions throughout the day."
-            ],
-            image: {
-                imageUrl: "https://media-exp1.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0?e=1605744000&v=beta&t=BpGtXQcz3ypzxjuRdu-oKvOCZo5Jr3E4oNCl32qSEa0",
-                imageAlt: "Apple logo"
-            }
+            ]
         }
     ];
     return jobsArray;

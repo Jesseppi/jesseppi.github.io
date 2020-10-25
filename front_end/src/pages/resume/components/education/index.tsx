@@ -16,7 +16,7 @@ export const renderEducationBlocks = () => {
                 <Heading level={HeadingLevel.h5} value={period} uppercase={false} />
             </ResumeBlock>
             <div className="flexRowSpaceBetween">
-                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.imageAlt !== "Gear logo" ? <img alt={image.imageAlt} src={image.imageUrl} /> : returnGearLogo()}</ResumeBlock>
+                <ResumeBlock blockType={ResumeBlockType.section} classes={imageBlockClasses}>{image.altText !== "Gear logo" ? <img alt={image.altText} src={image.url} /> : returnGearLogo()}</ResumeBlock>
                 <ResumeBlock blockType={ResumeBlockType.detail} rightJustifiedBlock={true} classes={["resumeJobBlock", "oneHundredPercentViewWidth"]}>
                     <Heading level={HeadingLevel.h4} value={`${institution.institution}, ${institution.location}`} uppercase={false} classes={["ralewayTitle"]} />
                     <Heading level={HeadingLevel.h4} value={certification} uppercase={true} />

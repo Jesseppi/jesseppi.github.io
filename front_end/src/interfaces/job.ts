@@ -6,7 +6,6 @@ export interface Job {
     position: string;
     description: string[];
     achievements?: string[];
-    image?: ImageDetail;
 }
 
 export interface Location {
@@ -18,4 +17,5 @@ export interface Location {
 export interface JobOrganisation {
     name: string;
     location: Location;
+    logo?: ImageDetail;
 }

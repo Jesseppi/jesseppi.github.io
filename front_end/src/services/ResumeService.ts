@@ -37,7 +37,7 @@ const getJobsData = (data: any) => {
             position: job.position,
             description: getJobDescription(job.description),
             achievements: job.achievements,
-            image: job.image
+            image: job.organisation.logo
         };
     });
 };
